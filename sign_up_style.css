@@ -1,0 +1,211 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #064b22;
+}
+
+.container {
+    width: 900px;
+    height: 600px;
+    background-image: url('https://images.unsplash.com/photo-1550826679-1b8ba79f1c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 1px 1px #d9d9d9;
+}
+
+.container .col-left {
+    width: 40%;
+    height: 80%;
+    margin: 60px 30px 0 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    background-position: center;
+    box-shadow: 1px 3px #ececec;
+}
+
+.container .col-left .info-left {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .col-left .info-left .company-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ff0088;
+    -webkit-text-stroke: 0.8px rgb(181, 17, 112);
+}
+
+.container .col-left .info-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin: 10px;
+}
+
+.container .col-left .info-left .btn-left a {
+    text-decoration: none;
+    align-items: center;
+    font-size: 15px;
+    color: #2d69c2;
+    background-color: whitesmoke;
+    padding: 6px;
+    border-radius: 40%;
+    margin: 10px;
+}
+
+.container .col-left .info-left .btn-left a:hover {
+    text-decoration: none;
+    color: rgb(255, 58, 58);
+    background-color: rgba(255, 231, 198, 0.852);
+}
+
+.container .col-left .info-left .detail {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.container .col-left .info-left .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .col-left .info-left .form .username,
+.container .col-left .info-left .form .email,
+.container .col-left .info-left .form .password1,
+.container .col-left .info-left .form .password2 {
+    width: 60%;
+    height: 30px;
+    margin: 20px 0 0 70px;
+    border: 1px solid #35589A;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .col-left .info-left .form .button {
+    width: 38%;
+    height: 35px;
+    margin: 20px 0 0 100px;
+    background-color: #FFA500;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container .col-left .info-left .form .button:hover {
+    border: 1px solid white;
+    background-color: #FF8C00;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .col-left .info-left .text-sign-in {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.container .col-left .info-left .text-sign-in a {
+    color: #ff0000;
+}
+
+.container .col-right {
+    width: 65%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .col-right .text-welcome {
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffffff;
+    justify-content: center;
+    text-shadow: 2px 4px rgb(37, 79, 11);
+    -webkit-text-stroke: 0.25px rgb(0, 0, 0);
+}
+
+.container .col-right .text-display {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 20px 50px
+}
+
+.container .col-right .btn-right {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .col-right .btn-right .example a {
+    text-decoration: none;
+    color: rgb(60, 2, 2);
+    background-color: rgb(255, 234, 100);
+    padding: 5px 10px;
+    border-radius: 24px;
+    box-shadow: 1px 1px #bababa;
+}
+
+.container .col-right .btn-right .example a:hover {
+    /* text-decoration: none; */
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 2px solid yellow;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0px;
+}
+
+.container .col-right .btn-right .more a {
+    text-decoration: none;
+    color: rgb(61, 11, 11);
+    background-color: rgb(255, 190, 120);
+    padding: 5px 10px;
+    border-radius: 24px;
+    margin-left: 20px;
+    box-shadow: 1px 1px #bababa;
+}
+
+.container .col-right .btn-right .more a:hover {
+    /* text-decoration: none; */
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 2px solid #a6ff3a;
+    padding: 5px 10px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

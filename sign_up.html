@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_up_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sign up</title>
+    <script>
+        function validateForm() {
+            let username = document.forms["sign_up"]["username"].value;
+            let email = document.forms["sign_up"]["email"].value;
+            let password1 = document.forms["sign_up"]["password1"].value;
+            let password2 = document.forms["sign_up"]["password2"].value;
+
+            if (username == "") {
+                alert("Username must be filled out");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            if (password1 == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+            if (password2 == "") {
+                alert("Confirm password must be filled out");
+                return false;
+            }
+
+            if (password1.length < 8) {
+                alert("Password must be at least 8 characters");
+                return false;
+            }
+
+
+            if (password1 != password2) {
+                alert("Password did not match. Please try again.")
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-left">
+            <div class="info-left">
+                <div class="company-name">
+                    Tea-cha<i class='bx bxs-leaf bx-tada' style='color:#139d04'></i>
+                </div>
+                <div class="title">Create Account</div>
+                <div class="btn-left">
+                    <a href="# "><i class='bx bxl-facebook'></i></a>
+                    <a href="# "><i class='bx bxl-google'></i></a>
+                    <a href="# "><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="detail">or use your email account</div>
+                <div class="form">
+                    <form name="sign_up" action="#" onsubmit="return validateForm()" method="POST">
+                        <input type="username " name="username" id="username" placeholder="Username " class="username">
+                        <input type="email" name="email" id="email" placeholder="Email" class="email">
+                        <input type="password" name="password1" id="password1" placeholder="Password" class="password1">
+                        <input type="password" name="password2" id="password2" placeholder="Confirm Password" class="password2">
+                        <input type="submit" value="Sign Up" class="button">
+
+                    </form>
+                </div>
+                <div class="text-sign-in"> Already had an account?
+                    <a href="sign_in.html ">Log In here</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <div class="text-welcome">Let's have a cup of tea!</div>
+            <div class="text-display">join us in exploring the world’s top tea brand whose raison d’être is to bring you the finest teas, including everything from organic and the best loose-leaf tea. </div>
+
+            <div class="btn-right">
+                <div class="example"><a href="#">Tea Time</a></div>
+                <div class="more"><a href="#">About Us</a></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
